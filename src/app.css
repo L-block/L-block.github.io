@@ -1,0 +1,66 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-size: 12px;
+    font-family: Calibri, 'sans-serif';
+    color: #222;
+    background: #ccc;
+}
+a {
+    font-style: italic;
+    color: darkslategrey;
+}
+a:hover {
+    cursor: pointer;
+}
+.page-wrapper {
+    height: 500px;
+    width: 800px;
+    padding-top: 25px;
+    padding-left: 15px;
+    overflow: hidden;
+}
+h2 {
+    font-size: 24px;
+    margin: 2px 0;
+}
+#nav .navitem {
+    display: inline-block;
+    padding-right: 8px;
+}
+#nav .navbtn {
+    color: darkslategrey;
+    font-size: 12px;
+}
+#content {
+    width: auto;
+    height: 100%;
+    padding: 5px 0;
+    margin-top: 25px;
+}
+#content .ng-leave {
+    transition:0.25s linear all;
+    opacity:1;
+}
+#content .ng-leave.ng-leave-active {
+    opacity:0;
+}
+#content .ng-enter {
+    transition:0.25s linear all;
+    opacity:0;
+}
+#content .ng-enter.ng-enter-active {
+    opacity:1;
+}
+.img {
+    width: 125px;
+    height: 125px;
+    border-radius: 75px;
+    margin-bottom: 5px;
+    overflow: hidden;
+}
+.img img {
+    width: 125px;
+}
