@@ -33,7 +33,7 @@
         }
 
         function downloadFile() {
-            window.open('src/files/Resume.pdf', '_blank');
+            window.open('src/files/resume.pdf', '_blank');
         }
     }
 })();
