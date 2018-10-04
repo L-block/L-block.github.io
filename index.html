@@ -7,31 +7,35 @@
     <body>
         <div class="page-wrapper" ng-app="app">
             <div ng-controller="AppCtrl as ctrl" class="page-wrapper">
-                <h2>hi.</h2>
-                <div id="nav">
+                <div id="top">
+                    <h2>hi.</h2>
+                    <div id="nav">
                         <div class="navitem" ng-repeat="nav in ctrl.navItems" ng-if="!nav.hidden">
                             <a class="navbtn" ng-click="ctrl.show(nav)">{{nav.name}}</a>
                         </div>
                     </div>
-                    <div id="content">
-                        <div id="landing" ng-if="ctrl.nav.landing.selected">
-                            <p>I'm just here so I won't get fined.</p>
-                        </div>
-                        <div id="about" ng-if="ctrl.nav.about.selected">
-                            <div class="img">
+                </div>
+                <div id="content">
+                    <div id="landing" ng-if="ctrl.nav.landing.selected">
+                        <p>I'm just here so I won't get fined.</p>
+                    </div>
+                    <div id="about" ng-if="ctrl.nav.about.selected">
+                        <div class="img">
+                            <div class="img-border">
                                 <img src="src/files/2.jpg">
                             </div>
-                            <p>Hi. My name is Stephanie and I'm a software developer in the Dallas area.</p>
-                            <p> Besides coding and technology, I love video games, gardening, cooking, and cats.</p>
-                            <p>&nbsp;</p>
-                            <p>You can reach me at <a href="mailto:contact@scheng.io">contact@scheng.io</a></p>
                         </div>
-                        <div id="links" ng-if="ctrl.nav.links.selected">
-                            <div ng-repeat="link in ctrl.links">
-                                > <a ng-href="{{link.href}}" target="_blank" ng-click="link.click()">{{link.name}}</a>
-                            </div>
+                        <p>Hi. My name is Stephanie and I'm a software developer in the Dallas area.</p>
+                        <p> Besides coding and technology, I love video games, gardening, cooking, and cats.</p>
+                        <p>&nbsp;</p>
+                        <p>You can reach me at <a href="mailto:contact@scheng.io">contact@scheng.io</a></p>
+                    </div>
+                    <div id="links" ng-if="ctrl.nav.links.selected">
+                        <div ng-repeat="link in ctrl.links">
+                            > <a ng-href="{{link.href}}" target="_blank" ng-click="link.click()">{{link.name}}</a>
                         </div>
                     </div>
+                </div>
             </div>
         </div>
         <script src="resource/angular.min.js"></script>
