@@ -13,9 +13,9 @@
         };
         vm.navItems = [ vm.nav.about, vm.nav.links, vm.nav.landing ];
         vm.links = [
-            { name: 'github', href: 'https://github.com/L-block' },
-            { name: 'linkedin', href: 'https://www.linkedin.com/in/stephanie-cheng-541130152/' },
-            { name: 'resume', href: 'src/files/resume.pdf' }
+            { name: 'github', href: 'https://github.com/L-block', click: function(){} },
+            { name: 'linkedin', href: 'https://www.linkedin.com/in/stephanie-cheng-541130152/', click: function(){} },
+            { name: 'resume', href: '', click: downloadFile }
         ];
 
         activate();
@@ -30,6 +30,10 @@
             $timeout(function () {
                 nav.selected = true;
             }, 500);
+        }
+
+        function downloadFile() {
+            window.open('src/files/Resume.pdf', '_blank');
         }
     }
 })();

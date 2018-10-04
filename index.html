@@ -28,7 +28,7 @@
                         </div>
                         <div id="links" ng-if="ctrl.nav.links.selected">
                             <div ng-repeat="link in ctrl.links">
-                                > <a ng-href="{{link.href}}" target="_blank">{{link.name}}</a>
+                                > <a ng-href="{{link.href}}" target="_blank" ng-click="link.click()">{{link.name}}</a>
                             </div>
                         </div>
                     </div>

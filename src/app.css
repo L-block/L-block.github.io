@@ -9,8 +9,8 @@ body {
     background: #ccc;
 }
 a {
-    font-style: italic;
     color: darkslategrey;
+    text-decoration: underline;
 }
 a:hover {
     cursor: pointer;
@@ -31,8 +31,10 @@ h2 {
     padding-right: 8px;
 }
 #nav .navbtn {
+    font-style: italic;
     color: darkslategrey;
     font-size: 12px;
+    text-decoration: none;
 }
 #content {
     width: auto;
