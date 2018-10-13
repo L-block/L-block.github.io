@@ -5,7 +5,7 @@
 
     function aboutPage() {
         return {
-            templateUrl: 'src/pages/about/about.html'
+            templateUrl: 'src/directives/about/about.html'
         };
     }
 })();

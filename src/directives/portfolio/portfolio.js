@@ -7,7 +7,7 @@
         return {
             controller: 'PortfolioCtrl',
             controllerAs: 'ctrl',
-            templateUrl: 'src/pages/portfolio/portfolio.html'
+            templateUrl: 'src/directives/portfolio/portfolio.html'
         };
     }
 })();

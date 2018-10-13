@@ -11,7 +11,7 @@
                 navChanged: '&',
                 navItems: '<'
             },
-            templateUrl: 'src/components/nav/nav.html'
+            templateUrl: 'src/directives/nav/nav.html'
         };
     }
 })();

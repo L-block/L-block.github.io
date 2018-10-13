@@ -5,7 +5,7 @@
 
     function linksPage() {
         return {
-            templateUrl: 'src/pages/links/links.html'
+            templateUrl: 'src/directives/links/links.html'
         };
     }
 })();
