@@ -1,13 +1,13 @@
 (function () {
     'use strict';
 
-    angular.module('app').component('nav', nav);
+    angular.module('app').directive('nav', nav);
 
     function nav() {
         return {
             controller: 'NavCtrl',
             controllerAs: 'ctrl',
-            bindings: {
+            bindToController: {
                 navChanged: '&',
                 navItems: '<'
             },
