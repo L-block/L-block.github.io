@@ -74,10 +74,10 @@ a {
 }
 #content {
     margin-top: 15px;
-    margin-left: 25px;
     position: relative;
 }
 .page {
+    margin: 0 25px;
     position: absolute;
     top: 0;
     left: 0;
@@ -108,4 +108,21 @@ a {
 }
 p.link {
     padding: 3px 0;
+}
+@media(max-width: 800px) {
+    .page {
+        margin: 0 10px;
+    }
+}
+@media(max-width: 740px) {
+    .about-panel {
+        display: block;
+    }
+    .about-panel.img {
+        width: 100px;
+        margin: 0 auto;
+    }
+    .about-panel.about {
+        padding: 10px 15px;
+    }
 }

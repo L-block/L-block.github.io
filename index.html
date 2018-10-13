@@ -13,10 +13,10 @@
                     <div id="navigation" nav nav-changed="pg.navChanged(navitem)" nav-items="pg.navitems"></div>
                 </div>
                 <div id="content">
-                    <landing-page class="page" ng-class="{ current: pg.pages.landing.active }" ng-if="pg.viewPage"></landing-page>
-                    <about-page class="page" ng-class="{ current: pg.pages.about.active }" ng-if="pg.viewPage"></about-page>
-                    <portfolio-page class="page" ng-class="{ current: pg.pages.portfolio.active }" ng-if="pg.viewPage"></portfolio-page>
-                    <links-page class="page" ng-class="{ current: pg.pages.links.active }" ng-if="pg.viewPage"></links-page>
+                    <landing-page id="landing" class="page" ng-class="{ current: pg.pages.landing.active }" ng-if="pg.viewPage"></landing-page>
+                    <about-page id="about" class="page" ng-class="{ current: pg.pages.about.active }" ng-if="pg.viewPage"></about-page>
+                    <portfolio-page id="portfolio" class="page" ng-class="{ current: pg.pages.portfolio.active }" ng-if="pg.viewPage"></portfolio-page>
+                    <links-page id="links" class="page" ng-class="{ current: pg.pages.links.active }" ng-if="pg.viewPage"></links-page>
                 </div>
             </div>
         </div>
