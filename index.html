@@ -3,46 +3,32 @@
         <title>Stephanie Cheng</title>
         <meta name="author" content="scheng">
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="src/app.css">
+        <link rel="stylesheet" type="text/css" href="src/css/app.css">
     </head>
     <body>
-        <div class="page-wrapper" ng-app="app">
-            <div ng-controller="AppCtrl as ctrl" class="page-wrapper">
-                <div id="top">
-                    <h2>hi.</h2>
-                    <div id="nav">
-                        <div class="navitem" ng-repeat="nav in ctrl.navItems" ng-if="!nav.hidden">
-                            <a class="navbtn" ng-click="ctrl.show(nav)">{{nav.name}}</a>
-                        </div>
-                    </div>
+        <div id="app" ng-app="app">
+            <div ng-controller="PageCtrl as pg" class="page-wrapper">
+                <div id="header">
+                    <nav nav-changed="pg.navChanged(navitem)" nav-items="pg.navitems"></nav>
                 </div>
                 <div id="content">
-                    <div id="landing" ng-if="ctrl.nav.landing.selected">
-                        <p>I'm just here so I won't get fined.</p>
-                        <p><em>This site is still under construction.</em></p>
-                    </div>
-                    <div id="about" ng-if="ctrl.nav.about.selected">
-                        <div class="img">
-                            <div class="img-border">
-                                <img src="src/files/2.jpg">
-                            </div>
-                        </div>
-                        <p>Hi. My name is Stephanie and I'm a software developer in the Dallas area.</p>
-                        <p> Besides coding and technology, I love video games, gardening, cooking, and cats.</p>
-                        <p>&nbsp;</p>
-                        <p>You can reach me at <a href="mailto:contact@scheng.io">contact@scheng.io</a></p>
-                    </div>
-                    <div id="links" ng-if="ctrl.nav.links.selected">
-                        <div ng-repeat="link in ctrl.links">
-                            > <a ng-href="{{link.href}}" target="_blank" ng-click="link.click()">{{link.name}}</a>
-                        </div>
-                    </div>
+                    <landing-page ng-if="pg.pages.landing.active"></landing-page>
+                    <about-page ng-if="pg.pages.about.active"></about-page>
+                    <portfolio-page ng-if="pg.pages.portfolio.active"></portfolio-page>
+                    <links-page ng-if="pg.pages.links.active"></links-page>
                 </div>
             </div>
         </div>
         <script src="resource/angular.min.js"></script>
         <script src="resource/angular-animate.min.js"></script>
         <script src="app.js"></script>
-        <script src="src/AppCtrl.js"></script>
+        <script src="src/components/nav/nav.js"></script>
+        <script src="src/components/nav/navCtrl.js"></script>
+        <script src="src/pages/about/about.js"></script>
+        <script src="src/pages/landing/landing.js"></script>
+        <script src="src/pages/portfolio/portfolio.js"></script>
+        <script src="src/pages/portfolio/portfolioCtrl.js"></script>
+        <script src="src/pages/links/links.js"></script>
+        <script src="src/controllers/pageCtrl.js"></script>
     </body>
 </html>

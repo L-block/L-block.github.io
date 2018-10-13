@@ -1,0 +1,10 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-size: 12px;
+    font-family: Helvetica, Calibri, 'sans-serif';
+    color: #222;
+    overflow: hidden;
+}
