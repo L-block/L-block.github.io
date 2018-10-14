@@ -29,5 +29,10 @@
             }
         };
         vm.projects = [ vm.projectItems.jobScheduler, vm.projectItems.reconciliation, vm.projectItems.designPortfolio ];
+
+        activate();
+        function activate() {
+
+        }
     }
 })();
