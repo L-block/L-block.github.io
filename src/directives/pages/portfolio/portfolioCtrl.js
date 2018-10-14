@@ -11,7 +11,7 @@
                 imgsrc: 'files/projects/js.jpg',
                 href: '',
                 client: 'Siepe LLC',
-                description: 'Doashboard of scripts currently in the database. Manage SQL scripts and reccuring exectution times and behaviors from an easy to use web portal.'
+                description: 'Dashboard of scripts currently in the database. Manage SQL scripts and reccuring exectution times and behaviors from an easy to use web portal.'
             },
             reconciliation: {
                 title: 'Reconciliation Tool',
