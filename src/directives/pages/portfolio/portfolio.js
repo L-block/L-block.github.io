@@ -5,6 +5,8 @@
 
     function portfolioPage() {
         return {
+            controller: 'PortfolioCtrl',
+            controllerAs: 'proj',
             templateUrl: 'src/directives/pages/portfolio/portfolio.html'
         };
     }
