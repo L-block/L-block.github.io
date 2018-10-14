@@ -121,6 +121,7 @@ p.link {
 .project .project-img {
     width: 250px;
     height: 100px;
+    border-radius: 3px;
     overflow: hidden;
 }
 .project .project-link img {
