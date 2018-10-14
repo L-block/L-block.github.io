@@ -5,9 +5,7 @@
 
     function portfolioPage() {
         return {
-            controller: 'PortfolioCtrl',
-            controllerAs: 'ctrl',
-            templateUrl: 'src/directives/portfolio/portfolio.html'
+            templateUrl: 'src/directives/pages/portfolio/portfolio.html'
         };
     }
 })();

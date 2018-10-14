@@ -109,11 +109,47 @@ a {
 p.link {
     padding: 3px 0;
 }
+.project {
+    margin-bottom: 50px;
+}
+.project a {
+    font-style: normal;
+}
+.project p {
+    margin: 5px 0;
+}
+.project .project-img {
+    width: 250px;
+    height: 100px;
+    overflow: hidden;
+}
+.project .project-link img {
+    opacity: 0.5;
+    -webkit-transition: opacity ease-in-out 0.25s;
+    -moz-transition: opacity ease-in-out 0.25s;
+    -ms-transition: opacity ease-in-out 0.25s;
+    -o-transition: opacity ease-in-out 0.25s;
+    transition: opacity ease-in-out 0.25s;
+}
+.project .project-link:hover img {
+    opacity: 1;
+}
+.project .project-img img {
+    width: 100%;
+}
+.project .project-client {
+    font-style: italic;
+}
+.project .project-title {
+    font-weight: bold;
+}
+
 @media(max-width: 800px) {
     .page {
         margin: 0 10px;
     }
 }
+
 @media(max-width: 740px) {
     .about-panel {
         display: block;

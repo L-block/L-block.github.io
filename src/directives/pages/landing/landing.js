@@ -5,7 +5,7 @@
 
     function landingPage() {
         return {
-            templateUrl: 'src/directives/landing/landing.html'
+            templateUrl: 'src/directives/pages/landing/landing.html'
         };
     }
 })();
