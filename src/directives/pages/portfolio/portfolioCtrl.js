@@ -21,7 +21,7 @@
                 description: 'A quick and simple dashboard for fund accountants and portfolio managers. Enables traders to adjust positions and contact brokers from one location.'
             },
             designPortfolio: {
-                title: 'Designer Portfolio Site',
+                title: 'Beverly Cheng - Portfolio Site',
                 imgsrc: 'files/projects/pt.jpg',
                 href: '/bcheng-portfolio',
                 client: 'Beverly Cheng',
