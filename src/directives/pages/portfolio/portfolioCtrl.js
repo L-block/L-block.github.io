@@ -22,7 +22,7 @@
             },
             designPortfolio: {
                 title: 'Beverly Cheng - Portfolio Site',
-                imgsrc: 'files/projects/pt.jpg',
+                imgsrc: 'files/projects/pt.png',
                 href: '/bcheng-portfolio',
                 client: 'Beverly Cheng',
                 description: 'Portfolio site for artist and software/graphic designer Beverly Cheng.'
