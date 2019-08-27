@@ -23,7 +23,7 @@
         }
         
         function reset() {
-            vm.navitem.forEach(function (nav) {
+            vm.navitems.forEach(function (nav) {
                 nav.active = false
             });
             vm.pages.landing.active = true;
