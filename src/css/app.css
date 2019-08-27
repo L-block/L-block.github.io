@@ -23,6 +23,7 @@ a {
     margin-left: 15px;
     vertical-align: middle;
     cursor: pointer;
+    background: #47555e;
 }
 #navigation {
     display: inline-block;
